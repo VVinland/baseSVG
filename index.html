@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>SVG</title>
+</head>
+
+<body>
+    <div class="box">
+        <svg class="svg">
+            <rect width="200px" height="150" fill="#1234" x="100" y="75" rx="20" />
+        </svg>
+        <svg class="svg">
+            <circle r="100px" cx="50%" cy="50%" fill="#12af" stroke="red" stroke-width="15" />
+        </svg>
+        <svg class="svg">
+            <ellipse rx="100px" ry="50px" cx="50%" cy="50%" fill="gold" />
+        </svg>
+        <svg class="svg">
+            <polygon points="50,50 350,50 350,250 200,300 50,250" fill="slateblue" />
+        </svg>
+        <svg class="svg">
+            <line class="line" x1="50" y1="50" x2="350" y2="250" stroke="brown" stroke-width="10" />
+        </svg>
+        <svg class="svg ">
+            <polyline class="polyline" points="50,50 50,100 150,100 150,50 250,50 300,250" fill="none" stroke="green"
+                stroke-width="30" />
+        </svg>
+        <svg class="svg-text" width="402" height="302" viewBox="0 0 402 302" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path id="path"
+                d="M8.31438 301C-4.56056 165.112 -9.54959 -75.0854 73.4938 51.2334C177.298 209.132 -31.1151 203.39 78.3219 243.582C187.759 283.775 161.204 -141.116 239.259 51.2334C301.702 205.113 373.104 101.952 401 31.1372"
+                stroke="transporent" />
+            <text class="text">
+                <textPath href="#path">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corporis voluptates adipisci ipsam officia quam! Quam id ex asperiores?
+                </textPath>
+            </text>
+        </svg>
+
+        <svg class="svg">
+            <circle r="100px" cx="50%" cy="50%" fill="#12cffc" />
+            <circle r="50px" cx="50%" cy="50%" fill="#12cffc" stroke="gold" stroke-width="100" stroke-dasharray="20"
+                stroke-dashoffset="17" />
+        </svg>
+
+        <svg class="svg">
+            <polygon points="50,25 350,25 350,225 200,275 50,225" fill="none" stroke="brown" stroke-width="10px"
+                stroke-dasharray="50" stroke-dashoffset="5" />
+        </svg>
+
+        <svg class="svg svg-rect">
+            <text class="text-head" fill="black">Наведите мышкой</text>
+            <rect class="rect" width="300px" height="150px" fill="#12cc" x="50" y="75" rx="20px" />
+        </svg>
+        <svg class="svg svg-circle">
+            <text class="text-head">Наведите мышкой</text>
+            <circle r="100px" cx="50%" cy="50%" fill="red" />
+            <circle class="circle" r="50px" cx="50%" cy="50%" fill="red" stroke="gold" stroke-width="100" />
+        </svg>
+
+        <svg class="svg svg-circle" viewBox="0 0 400 350" preserveAspectRatio="xMidYMid meet">
+            <circle r="100" cx="100px" cy="100px" fill="red" opacity=".5"/>
+            <circle r="100" cx="100px" cy="250px" fill="blue" opacity=".5"/>
+            <circle r="100" cx="300px" cy="100px" fill="green" opacity=".5"/>
+            <circle r="100" cx="300px" cy="250px" fill="gold" opacity=".5"/>
+        </svg>
+
+    </div>
+    <svg class="apple" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="500" height="500">
+        <text class="text-head">Наведите мышкой</text>
+        <path class="apple-path" d="M224 112c-8.8 0-16-7.2-16-16V80c0-44.2 35.8-80 80-80h16c8.8 
+                     0 16 7.2 16 16V32c0 44.2-35.8 80-80 80H224zM0 288c0-76.3 35.7-160 112-160c27.3 
+                     0 59.7 10.3 82.7 19.3c18.8 7.3 39.9 7.3 58.7 0c22.9-8.9 55.4-19.3 82.7-19.3c76.3 
+                     0 112 83.7 112 160c0 128-80 224-160 224c-16.5 0-38.1-6.6-51.5-11.3c-8.1-2.8-16.9-2.8-25 
+                     0c-13.4 4.7-35 11.3-51.5 11.3C80 512 0 416 0 288z" />
+    </svg>
+
+    <img class="imagePeace" src="Peace.jpg"/>
+    <img class="image" src="Peace.jpg"/>
+
+    <svg class="apple" width="1" height="1" viewBox="0 0 1 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <clipPath id="peace" clipPathUnits="objectBoundingBox">
+            <path class="apple-path" d="M0.496167 0.210843C0.476675 0.210843 0.460727 
+        0.197289 0.460727 0.180723V0.150602C0.460727 0.0673946 0.540025 
+        0 0.637929 0H0.67337C0.692862 0 0.70881 0.0135542 0.70881 0.0301205V0.060241C0.70881 
+        0.143449 0.629512 0.210843 0.531608 0.210843H0.496167ZM0 0.542169C0 0.398532 0.0790766 
+        0.240964 0.248084 0.240964C0.308554 0.240964 0.380321 0.260354 0.431267 0.277297C0.472909 
+        0.291039 0.519647 0.291039 0.561289 0.277297C0.612013 0.260542 0.684002 0.240964 0.744472 
+        0.240964C0.913479 0.240964 0.992556 0.398532 0.992556 0.542169C0.992556 0.783133 0.815353 
+        0.963855 0.638151 0.963855C0.601603 0.963855 0.553758 0.951431 0.524077 0.942583C0.506135 
+        0.937312 0.486643 0.937312 0.468701 0.942583C0.439019 0.951431 0.391175 0.963855 0.354627 
+        0.963855C0.177203 0.963855 0 0.783133 0 0.542169Z" fill="black" />
+        </clipPath>
+    </svg>
+        
+</body>
+
+</html>

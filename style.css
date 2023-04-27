@@ -1,0 +1,94 @@
+html,
+body {
+    /* width: 100%;
+    height: 100%; */
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.box{
+    width: 1800px;
+    height: 1000px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    overflow:visible;
+}
+
+.svg{
+    width:400px;
+    height:300px;
+    border:1px solid black;
+    overflow:visible;
+}
+.text{
+    font-size:24px;
+    fill:black;
+}
+.svg-text{
+    overflow:visible; 
+}
+
+.rect{
+    stroke:brown;
+    stroke-width:20px;
+    fill:none;
+    stroke-dasharray:900px;
+    stroke-dashoffset:900px;
+    transition:all 1s ease-in-out;
+}
+
+.svg-rect:hover .rect,
+.svg-circle:hover .circle,
+.apple:hover .apple-path{
+    stroke-dashoffset:0px;
+}
+
+.text-head{
+    font-size: 30px;
+}
+
+.circle{
+    stroke-dasharray:314px;
+    stroke-dashoffset:314px;
+    transition:all 1s ease-in-out;
+}
+
+.apple-path{
+    fill:none;
+    stroke:brown;
+    stroke-width:10px;
+    stroke-dasharray: 1800px;
+    stroke-dashoffset:1800px;
+    transition: all 1s ease-in-out;
+}
+.apple{
+    overflow:visible;
+}
+.apple path{
+    fill:greenyellow;
+    opacity: 0.5;
+}
+
+.imagePeace{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.image{
+    width:1000px;
+    clip-path:url(#peace);
+}
+
+.polyline{
+    stroke-linejoin:round;
+}
+
+.line{
+    stroke-width:40px;
+    stroke-linecap:round;
+}
